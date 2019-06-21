@@ -17,7 +17,7 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: CopyFiles@1
-  displayName: 'Copy File to : $(build.artifactstagingDirectory)'
+  displayName: 'Copy Files to: $(build.artifactstagingDirectory)'
   inputs:
     SourceFolder: '$(build.sourcedirectory)'
     Contents: |
